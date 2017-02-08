@@ -1,0 +1,21 @@
+
+"""
+Legged bot
+
+2 servo with feedback sensor
+[_]+-+-
+
+1. generate population of genotypes + one unique NEAT NN following the rules of genetic programing
+2. each individu has a seq of moves in time
+   - use neat NN to evolve the net [NEAT == genetic program?]
+   - the seq is based on a sweep of the servo but are just values
+   - neat could evolve the seq to add inputs or erase one or some
+   - each sensor has dynamic value  
+3. check the fitness of each seq in the population
+  - evolve the population
+  - each individu keeps a log in each seq numbers to knows in which inputs their go in the processed net they are using
+4. check the fitness of each net throught out all its population generations
+  - evolve the net
+  - if net have the same structure use fitest individu/seq from another net
+  - 
+"""
